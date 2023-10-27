@@ -1,87 +1,87 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru"  class="page">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
-<body>
-  <div class="container">
-    <header class="page-header">
+<body class="page__body">
+  <div class="page__container">
+    <header class="page__header main-header">
+      <a href="#" class="main-header__logo">
+        <img class="main-header__logo-img" src="img/logo-desktop.svg" width="202" height="59" alt="Cat Energy Logo.">
+      </a>
       <nav class="navbar">
-        <a href="#" class="logo">
-          <img class="logo-img" src="img/logo-desktop.svg" width="202" height="59" alt="Cat Energy Logo.">
-        </a>
-        <ul class="navigation-list clear-list">
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-active">
+        <ul class="navbar__list clear-list">
+          <li class="navbar__item">
+            <a class="navbar__link navbar__link--active">
               Главная
             </a>
           </li>
-          <li class="navigation-item">
-            <a href="catalog.html" class="navigation-link">
+          <li class="navbar__item">
+            <a href="catalog.html" class="navbar__link">
               Каталог продукции
             </a>
           </li>
-          <li class="navigation-item">
-            <a href="form.html" class="navigation-link">
+          <li class="navbar__item">
+            <a href="form.html" class="navbar__link">
               Подбор программы
             </a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="page__main main-container">
       <section class="hero">
-        <h1 class="hero-title">Функциональное питание для котов</h1>
-        <p class="hero-text">Занялся собой? Займись котом!</p>
-        <a href="#" class="hero-button button">
+        <h1 class="hero__title">Функциональное питание для котов</h1>
+        <p class="hero__text">Занялся собой? Займись котом!</p>
+        <a href="#" class="hero__button button">
           Подобрать программу
         </a>
       </section>
       <section class="features">
-        <ul class="features-list clear-list">
-          <li class="features-item">
-            <h2 class="feature-title">Похудение</h2>
-            <p class="feature-text">Ваш кот весит больше собаки и почти утратил способность
+        <ul class="features__list clear-list">
+          <li class="features__item">
+            <h2 class="features__title">Похудение</h2>
+            <p class="features__text">Ваш кот весит больше собаки и почти утратил способность
               лазить по деревьям? Пора на диету! Cat Energy Slim поможет
               вашему питомцу сбросить лишний вес.
             </p>
-            <a href="#" class="feature-link">Каталог Slim</a>
+            <a href="#" class="features__link">Каталог Slim</a>
           </li>
-          <li class="features-item">
-            <h2 class="feature-title">Набор массы</h2>
-            <p class="feature-text">Заработать авторитет среди дворовых котов и даже собак?
+          <li class="features__item">
+            <h2 class="features__title">Набор массы</h2>
+            <p class="features__text">Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить
               необходимые мышцы!
             </p>
-            <a href="#" class="feature-link">Каталог PRO</a>
+            <a href="#" class="features__link">Каталог PRO</a>
           </li>
         </ul>
       </section>
       <section class="about">
-        <h3 class="about-title">Как это работает</h3>
-        <ul class="about-list clear-list">
-          <li class="about-item">
+        <h3 class="about__title">Как это работает</h3>
+        <ul class="about__list clear-list">
+          <li class="about__item">
             <span class="visually-hidden">Иконка эко-лист</span>
             Функциональное питание
             содержит только полезные
             питательные вещества.
           </li>
-          <li class="about-item">
+          <li class="about__item">
             <span class="visually-hidden">Иконка кипяток</span>
             Выпускается в виде порошка,
             который нужно лишь залить
             кипятком и готово.
           </li>
-          <li class="about-item">
+          <li class="about__item">
             <span class="visually-hidden">Иконка вилка и нож</span>
             Замените один-два приема
             обычной еды на наше
             функциональное питание.
           </li>
-          <li class="about-item">
+          <li class="about__item">
             <span class="visually-hidden">Иконка будильник</span>
             Уже через месяц наслаждайтесь
             изменениями к лучшему
@@ -90,60 +90,62 @@
         </ul>
       </section>
       <section class="results">
-        <h4 class="results-title">Живой пример</h4>
-        <p class="results-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
+        <h4 class="results__title">Живой пример</h4>
+        <p class="results__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
           обычный корм на Cat Energy Slim. Отличный результат
           без изнуряющих тренировок! При этом он не менял своих
           привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <ul class="results-list">
-          <li class="results-item">
-            <span class="result-value">5 кг</span>
-            <span class="result-name">снижение веса</span>
+        <ul class="results__list">
+          <li class="results__item">
+            <span class="results__value">5 кг</span>
+            <span class="results__name">снижение веса</span>
           </li>
-          <li class="results-item">
-            <span class="result-value">60 дней</span>
-            <span class="result-name">затрачено времени</span>
+          <li class="results__item">
+            <span class="results__value">60 дней</span>
+            <span class="results__name">затрачено времени</span>
           </li>
         </ul>
-        <p class="result-price-name">Затраны на питание:</p>
-        <p class="result-price-value">15 000 руб.</p>
+        <div class="results__price">
+          <p>Затраны на питание:</p>
+          <p>15 000 руб.</p>
+        </div>
       </section>
       <section class="map">
-        <div class="map-info-wrapper">
-          <h5 class="map-title">
+        <div class="map__info">
+          <h5 class="map__title">
             Приглашаем
             к сотрудничеству
             дилеров!
           </h5>
-          <p class="map-address">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="map-city">Санкт-Петербург</p>
+          <p class="map__address">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="map__city">Санкт-Петербург</p>
         </div>
       </section>
     </main>
-    <footer class="page-footer">
-      <div class="footer-wrapper">
-        <a href="#" class="footer-logo">
-          <img class="footer-logo-img" src="img/footer-logo.svg" width="128" height="24" alt="Cat Energy Logo.">
+    <footer class="page__footer main-footer">
+      <div class="main-footer__wrapper">
+        <a href="#" class="main-footer__logo">
+          <img src="img/footer-logo.svg" width="128" height="24" alt="Cat Energy Logo.">
         </a>
-        <ul class="social-list clear-list">
-          <li class="social-item">
-            <a href="#" class="social-link vk-link">
+        <ul class="main-footer__social social clear-list">
+          <li class="social__item">
+            <a href="#" class="social__link vk-link">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
-          <li class="social-item">
-            <a href="#" class="social-link youtube-link">
+          <li class="social__item">
+            <a href="#" class="social__link youtube-link">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
-          <li class="social-item">
-            <a href="#" class="social-link tg-link">
+          <li class="social__item">
+            <a href="#" class="social__link tg-link">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
         </ul>
-        <a href="#" class="academy-link">
+        <a href="#" class="main-footer__academy-link">
           HTML Academy
         </a>
       </div>
