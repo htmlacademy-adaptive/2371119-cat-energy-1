@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru"  class="page">
+<html lang="ru" class="page">
 
 <head>
   <meta charset="utf-8">
@@ -9,7 +9,7 @@
 <body class="page__body">
   <div class="page__container">
     <header class="page__header main-header">
-      <a href="#" class="main-header__logo">
+      <a class="main-header__logo">
         <img class="main-header__logo-img" src="img/logo-desktop.svg" width="202" height="59" alt="Cat Energy Logo.">
       </a>
       <nav class="navbar">
@@ -32,7 +32,7 @@
         </ul>
       </nav>
     </header>
-    <main class="page__main main-container">
+    <main class="page__main">
       <section class="hero">
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__text">Занялся собой? Займись котом!</p>
@@ -40,54 +40,50 @@
           Подобрать программу
         </a>
       </section>
-      <section class="features">
-        <ul class="features__list clear-list">
-          <li class="features__item">
-            <h2 class="features__title">Похудение</h2>
-            <p class="features__text">Ваш кот весит больше собаки и почти утратил способность
+      <section class="programs">
+        <ul class="programs__list clear-list">
+          <li class="programs__item">
+            <h2 class="programs__title">Похудение</h2>
+            <p class="programs__text">Ваш кот весит больше собаки и почти утратил способность
               лазить по деревьям? Пора на диету! Cat Energy Slim поможет
               вашему питомцу сбросить лишний вес.
             </p>
-            <a href="#" class="features__link">Каталог Slim</a>
+            <a href="#" class="programs__link">Каталог Slim</a>
           </li>
-          <li class="features__item">
-            <h2 class="features__title">Набор массы</h2>
-            <p class="features__text">Заработать авторитет среди дворовых котов и даже собак?
+          <li class="programs__item">
+            <h2 class="programs__title">Набор массы</h2>
+            <p class="programs__text">Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить
               необходимые мышцы!
             </p>
-            <a href="#" class="features__link">Каталог PRO</a>
+            <a href="#" class="programs__link">Каталог PRO</a>
           </li>
         </ul>
       </section>
       <section class="about">
         <h3 class="about__title">Как это работает</h3>
-        <ul class="about__list clear-list">
+        <ol class="about__list clear-list">
           <li class="about__item">
-            <span class="visually-hidden">Иконка эко-лист</span>
             Функциональное питание
             содержит только полезные
             питательные вещества.
           </li>
           <li class="about__item">
-            <span class="visually-hidden">Иконка кипяток</span>
             Выпускается в виде порошка,
             который нужно лишь залить
             кипятком и готово.
           </li>
           <li class="about__item">
-            <span class="visually-hidden">Иконка вилка и нож</span>
             Замените один-два приема
             обычной еды на наше
             функциональное питание.
           </li>
           <li class="about__item">
-            <span class="visually-hidden">Иконка будильник</span>
             Уже через месяц наслаждайтесь
             изменениями к лучшему
             вашего питомца!
           </li>
-        </ul>
+        </ol>
       </section>
       <section class="results">
         <h4 class="results__title">Живой пример</h4>
@@ -113,11 +109,11 @@
       </section>
       <section class="map">
         <div class="map__info">
-          <h5 class="map__title">
+          <h3 class="map__title">
             Приглашаем
             к сотрудничеству
             дилеров!
-          </h5>
+          </h3>
           <p class="map__address">ул. Большая Конюшенная, д. 19/8</p>
           <p class="map__city">Санкт-Петербург</p>
         </div>
@@ -126,21 +122,21 @@
     <footer class="page__footer main-footer">
       <div class="main-footer__wrapper">
         <a href="#" class="main-footer__logo">
-          <img src="img/footer-logo.svg" width="128" height="24" alt="Cat Energy Logo.">
+          <img class="main-footer__logo-img" src="img/footer-logo.svg" width="128" height="24" alt="Cat Energy Logo.">
         </a>
         <ul class="main-footer__social social clear-list">
           <li class="social__item">
-            <a href="#" class="social__link vk-link">
+            <a href="#" class="social__link social__link--vk">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link youtube-link">
+            <a href="#" class="social__link social__link--youtube">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link tg-link">
+            <a href="#" class="social__link social__link--telegram">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
