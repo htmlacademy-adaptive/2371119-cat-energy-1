@@ -1,10 +1,10 @@
 .card {
   background-color: #f2f2f2;
-  padding: 0 38px 40px 38px;
-  width: 169px;
+  padding: 151px 38px 40px 38px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 
   &--more {
     background-color: #ffffff;
@@ -12,7 +12,7 @@
     padding: 50px 36px 40px 36px;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       width: 60px;
       height: 60px;
@@ -32,7 +32,8 @@
   &--img {
     width: 169px;
     height: 210px;
-    margin-bottom: 12px;
+    position: absolute;
+    top: -56px;
   }
 }
 
@@ -45,6 +46,7 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 23px;
+  width: 140px;
 }
 
 .card__properties {
@@ -53,7 +55,11 @@
 }
 
 .card__property {
-  @include lato-text;
+  font-family: $font-lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #444444;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #cdcdcd;
@@ -65,15 +71,22 @@
     margin-bottom: 0;
   }
 
-  & p {
+  p {
     margin: 0;
   }
 }
 
 .card__text {
-  @include lato-text;
+  font-family: $font-lato;
+  font-size: 16px;
+  font-weight: 400;
+  color: #444444;
   line-height: 18px;
   text-align: center;
   margin-top: 0;
   margin-bottom: 90px;
+}
+
+.card__button {
+  width: 169px;
 }

@@ -2,7 +2,7 @@
   margin-bottom: 266px;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 50%;
     height: 694px;
@@ -12,27 +12,13 @@
     right: 0;
     z-index: -1;
   }
-
-  &::before {
-    content: '';
-    display: block;
-    width: 50%;
-    height: 694px;
-    background-image: url("../img/cat-background.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -2;
-  }
 }
 
 .hero__title {
   font-size: 60px;
   font-weight: 400;
   line-height: 60px;
-  color: #000;
+  color: #000000;
   margin-top: 0;
   margin-bottom: 40px;
 }
@@ -42,7 +28,7 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
   margin-top: 0;
   margin-bottom: 52px;
 }

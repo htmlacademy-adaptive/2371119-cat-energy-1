@@ -1,55 +1,8 @@
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswald/oswaldregular.woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswald/oswaldmedium.woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/lato/Lato-Regular.woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@mixin clear-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-@mixin lato-text {
-  font-family: "Lato", "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #444444;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
+@import "fonts.scss";
+@import "mixins.scss";
+@import "visually-hidden.scss";
 @import "button.scss";
+@import "field.scss";
 @import "container.scss";
 @import "page.scss";
 @import "main-header.scss";
@@ -67,4 +20,3 @@
 @import "extra-list.scss";
 @import "form.scss";
 @import "main-form.scss";
-@import "field.scss";

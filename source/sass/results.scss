@@ -2,7 +2,7 @@
   font-size: 60px;
   font-weight: 400;
   line-height: 60px;
-  color: #000;
+  color: #000000;
   max-width: 1220px;
   margin: 0 auto;
   margin-bottom: 76px;
@@ -17,7 +17,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: #444;
+  color: #444444;
   margin-top: 0;
   margin-bottom: 69px;
 }
@@ -34,9 +34,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #cdcdcd;
+  outline: 1px solid #cdcdcd;
   border-radius: 4px;
-  padding-top: 15px;
+  padding: 15px 0 20px;
   width: 162px;
   position: relative;
 }
@@ -45,19 +45,18 @@
   font-size: 30px;
   font-weight: 400;
   line-height: 37px;
-  color: #000;
+  color: #000000;
 }
 
 .results__name {
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
-  color: #444;
-  position: relative;
-  bottom: -5px;
-  border-left: 10px solid #f2f2f2;
-  border-right: 10px solid #f2f2f2;
+  color: #444444;
+  position: absolute;
+  top: 63px;
   background: #f2f2f2;
+  padding: 0 10px;
 }
 
 .results__price {
@@ -68,10 +67,10 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
 
-  & p {
+  p {
     margin: 0;
   }
 

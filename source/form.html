@@ -8,158 +8,160 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page__body">
-  <header class="page__header main-header">
-    <div class="main-header__container container">
-      <a href="index.html" class="main-header__logo">
-        <img class="main-header__logo-img" src="img/logo-desktop.svg" width="202" height="59" alt="Cat Energy Logo.">
-      </a>
-      <nav class="navbar">
-        <ul class="navbar__list">
-          <li class="navbar__item">
-            <a href="index.html" class="navbar__link navbar__link">
-              Главная
+<div class="page__wrapper">
+  <body class="page__body">
+    <header class="page__header main-header">
+      <div class="main-header__container container">
+        <a href="index.html" class="main-header__logo">
+          <img class="main-header__logo-img" src="img/logo-desktop.svg" width="202" height="59" alt="Cat Energy Logo.">
+        </a>
+        <nav class="navbar">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="index.html" class="navbar__link navbar__link">
+                Главная
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a href="catalog.html" class="navbar__link navbar__link">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link navbar__link  navbar__link--active">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page__main">
+      <section class="form">
+        <div class="form__container container">
+          <h1 class="form__title">Подбор программы</h1>
+          <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <form action="https://echo.htmlacademy.ru/" class="main-form">
+            <div class="main-form__program">
+              <div class="main-form__field-wrapper">
+                <label class="main-form__label field">
+                  <span class="field__name">Имя:*</span>
+                  <input class="field__input" type="text" name="name" placeholder="Барсик" required>
+                </label>
+                <label class="main-form__label field field--number">
+                  <span class="field__name">Вес (кг):*</span>
+                  <input class="field__input" type="number" name="weight" placeholder="7" required>
+                </label>
+                <label class="main-form__label field field--number">
+                  <span class="field__name">Возраст (лет):</span>
+                  <input class="field__input" type="number" name="age" placeholder="7">
+                </label>
+              </div>
+              <fieldset class="main-form__fieldset">
+                <label class="main-form__label choice choice--radio">
+                  <input class="choice__input" type="radio" name="program" value="Похудение" checked>
+                  <span class="choice__checkbox"></span>
+                  <span class="choice__name">Похудение</span>
+                </label>
+                <label class="main-form__label choice choice--radio">
+                  <input class="choice__input" type="radio" name="program" value="Набор массы">
+                  <span class="choice__checkbox"></span>
+                  <span class="choice__name">Набор массы</span>
+                </label>
+                <label class="main-form__label choice choice--radio">
+                  <input class="choice__input" type="radio" name="program" value="Не знаю (Нужен ваш совет)">
+                  <span class="choice__checkbox"></span>
+                  <span class="choice__name">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </fieldset>
+            </div>
+            <h2 class="main-form__title">Контактные данные (владельца кота)</h2>
+            <div class="main-form__contacts">
+              <label class="main-form__label field field--email">
+                <span class="field__name">E-mail:*</span>
+                <input class="field__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              </label>
+              <label class="main-form__label field field--tel">
+                <span class="field__name">Телефон:*</span>
+                <input class="field__input" type="tel" name="telephone" placeholder="8(960)900-60-90" required>
+              </label>
+            </div>
+            <h2 class="main-form__title">Комментарий</h2>
+            <textarea class="main-form__textarea field field--textarea" name="commentary"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+            <h2 class="main-form__title">Дополнительно</h2>
+            <div class="main-form__checkbox-wrapper">
+              <label class="main-form__label choice">
+                <input class="choice__input" type="checkbox" name="sweetener" value="Cахарозаменитель" checked>
+                <span class="choice__checkbox"></span>
+                <span class="choice__name">Сахарозаменитель</span>
+              </label>
+              <label class="main-form__label choice">
+                <input class="choice__input" type="checkbox" name="water" value="Питьевая вода">
+                <span class="choice__checkbox"></span>
+                <span class="choice__name">Питьевая вода</span>
+              </label>
+              <label class="main-form__label choice">
+                <input class="choice__input" type="checkbox" name="milk" value="Молоко">
+                <span class="choice__checkbox"></span>
+                <span class="choice__name">Молоко</span>
+              </label>
+              <label class="main-form__label choice">
+                <input class="choice__input" type="checkbox" name="vitamins" value="Витамины">
+                <span class="choice__checkbox"></span>
+                <span class="choice__name">Витамины</span>
+              </label>
+            </div>
+            <button type="submit" class="main-form__submit button button--big">Отправить заявку</button>
+            <span class="main-form__clue">* — Обязательные поля</span>
+          </form>
+      </section>
+      </div>
+      <section class="map">
+        <div class="map__container container">
+          <div class="map__info">
+            <h3 class="map__title">
+              Приглашаем<br>
+              к сотрудничеству<br>
+              дилеров!
+            </h3>
+            <div class="map__address">
+              <p class="map__street">ул. Большая<br>
+                Конюшенная, д. 19/8</p>
+              <p class="map__city">Санкт-Петербург</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page__footer main-footer">
+      <div class="main-footer__container container">
+        <a href="#" class="main-footer__logo">
+          <img class="main-footer__logo-img" src="img/footer-logo.svg" width="128" height="24" alt="Cat Energy Logo.">
+        </a>
+        <ul class="main-footer__social social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk">
+              <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
-          <li class="navbar__item">
-            <a href="catalog.html" class="navbar__link navbar__link">
-              Каталог продукции
+          <li class="social__item">
+            <a href="#" class="social__link social__link--youtube">
+              <span class="visually-hidden">Youtube</span>
             </a>
           </li>
-          <li class="navbar__item">
-            <a class="navbar__link navbar__link  navbar__link--active">
-              Подбор программы
+          <li class="social__item">
+            <a href="#" class="social__link social__link--telegram">
+              <span class="visually-hidden">Telegram</span>
             </a>
           </li>
         </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="page__main">
-    <section class="form">
-      <div class="form__container container">
-        <h1 class="form__title">Подбор программы</h1>
-        <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <form action="https://echo.htmlacademy.ru/" class="main-form">
-          <div class="main-form__program">
-            <div class="main-form__field-wrapper">
-              <label class="main-form__label field">
-                <span class="field__name">Имя:*</span>
-                <input class="field__input" type="text" name="name" placeholder="Барсик" required>
-              </label>
-              <label class="main-form__label field field--number">
-                <span class="field__name">Вес (кг):*</span>
-                <input class="field__input" type="number" name="weight" placeholder="7" required>
-              </label>
-              <label class="main-form__label field field--number">
-                <span class="field__name">Возраст (лет):</span>
-                <input class="field__input" type="number" name="age" placeholder="7">
-              </label>
-            </div>
-            <fieldset class="main-form__fieldset">
-              <label class="main-form__label choice choice--radio">
-                <input class="choice__input" type="radio" name="program" value="Похудение" checked>
-                <span class="choice__checkbox"></span>
-                <span class="choice__name">Похудение</span>
-              </label>
-              <label class="main-form__label choice choice--radio">
-                <input class="choice__input" type="radio" name="program" value="Набор массы">
-                <span class="choice__checkbox"></span>
-                <span class="choice__name">Набор массы</span>
-              </label>
-              <label class="main-form__label choice choice--radio">
-                <input class="choice__input" type="radio" name="program" value="Не знаю (Нужен ваш совет)">
-                <span class="choice__checkbox"></span>
-                <span class="choice__name">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </fieldset>
-          </div>
-          <h2 class="main-form__title">Контактные данные (владельца кота)</h2>
-          <div class="main-form__contacts">
-            <label class="main-form__label field field--email">
-              <span class="field__name">E-mail:*</span>
-              <input class="field__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-            </label>
-            <label class="main-form__label field field--tel">
-              <span class="field__name">Телефон:*</span>
-              <input class="field__input" type="tel" name="telephone" placeholder="8(960)900-60-90" required>
-            </label>
-          </div>
-          <h2 class="main-form__title">Комментарий</h2>
-          <textarea class="main-form__textarea field field--textarea" name="commentary"
-            placeholder="Расскажите обо всех повадках кота"></textarea>
-          <h2 class="main-form__title">Дополнительно</h2>
-          <div class="main-form__checkbox-wrapper">
-            <label class="main-form__label choice">
-              <input class="choice__input" type="checkbox" name="sweetener" value="Cахарозаменитель" checked>
-              <span class="choice__checkbox"></span>
-              <span class="choice__name">Сахарозаменитель</span>
-            </label>
-            <label class="main-form__label choice">
-              <input class="choice__input" type="checkbox" name="water" value="Питьевая вода">
-              <span class="choice__checkbox"></span>
-              <span class="choice__name">Питьевая вода</span>
-            </label>
-            <label class="main-form__label choice">
-              <input class="choice__input" type="checkbox" name="milk" value="Молоко">
-              <span class="choice__checkbox"></span>
-              <span class="choice__name">Молоко</span>
-            </label>
-            <label class="main-form__label choice">
-              <input class="choice__input" type="checkbox" name="vitamins" value="Витамины">
-              <span class="choice__checkbox"></span>
-              <span class="choice__name">Витамины</span>
-            </label>
-          </div>
-          <button type="submit" class="main-form__submit button button--big">Отправить заявку</button>
-          <span class="main-form__clue">* — Обязательные поля</span>
-        </form>
-    </section>
-    </div>
-    <section class="map">
-      <div class="map__container container">
-        <div class="map__info">
-          <h3 class="map__title">
-            Приглашаем<br>
-            к сотрудничеству<br>
-            дилеров!
-          </h3>
-          <div class="map__address">
-            <p class="map__street">ул. Большая<br>
-              Конюшенная, д. 19/8</p>
-            <p class="map__city">Санкт-Петербург</p>
-          </div>
-        </div>
+        <a href="#" class="main-footer__academy-link">
+          HTML Academy
+        </a>
       </div>
-    </section>
-  </main>
-  <footer class="page__footer main-footer">
-    <div class="main-footer__container container">
-      <a href="#" class="main-footer__logo">
-        <img class="main-footer__logo-img" src="img/footer-logo.svg" width="128" height="24" alt="Cat Energy Logo.">
-      </a>
-      <ul class="main-footer__social social">
-        <li class="social__item">
-          <a href="#" class="social__link social__link--vk">
-            <span class="visually-hidden">ВКонтакте</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link social__link--youtube">
-            <span class="visually-hidden">Youtube</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link social__link--telegram">
-            <span class="visually-hidden">Telegram</span>
-          </a>
-        </li>
-      </ul>
-      <a href="#" class="main-footer__academy-link">
-        HTML Academy
-      </a>
-    </div>
-  </footer>
+    </footer>
+</div>
 </body>
 
 </html>

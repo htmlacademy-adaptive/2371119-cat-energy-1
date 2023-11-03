@@ -8,7 +8,7 @@
   line-height: 60px;
   color: #000000;
   margin-top: 0;
-  margin-bottom: 84px;
+  margin-bottom: 165px;
 }
 
 .catalog__list {
@@ -16,5 +16,9 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 80px;
-  row-gap: 63px;
+  row-gap: 144px;
+}
+
+.catalog__card {
+  width: 169px;
 }

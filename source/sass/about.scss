@@ -6,7 +6,7 @@
   font-size: 60px;
   font-weight: 400;
   line-height: 60px;
-  color: #000;
+  color: #000000;
   margin-top: 0;
   margin-bottom: 32px;
 }
@@ -14,18 +14,18 @@
 .about__list {
   @include clear-list;
   display: flex;
+  justify-content: space-between;
+  counter-reset: myCounter;
 }
 
 .about__item {
-  height: 183px;
   display: flex;
   flex-direction: column;
   padding: 40px 0 57px 0;
-  height: 183px;
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     width: 80px;
     height: 80px;
@@ -36,73 +36,63 @@
   }
 
   &::after {
-    content: '';
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    font-size: 280px;
+    font-weight: 400;
+    line-height: 280px;
+    color: #f2f2f2;
     display: block;
-    background-repeat: no-repeat;
     position: absolute;
     z-index: -1;
+    bottom: 0;
   }
 
   &--leaf {
-    max-width: 230px;
-    margin-right: 94px;
+    width: 230px;
 
     &::before {
       background-image: url("../img/icon_leaf.svg");
     }
 
     &::after {
-      background-image: url("../img/1.png");
-      width: 71px;
-      height: 227px;
-      right: 33px;
+      left: 118px;
     }
   }
 
   &--powder {
-    max-width: 246px;
-    margin-right: 79px;
+    width: 246px;
 
     &::before {
       background-image: url("../img/powder.svg")
     }
 
     &::after {
-      background-image: url("../img/2.png");
-      width: 113px;
-      height: 229px;
-      right: 13px;
+      left: 112px;
     }
   }
 
   &--eat {
-    max-width: 248px;
-    margin-right: 77px;
+    width: 248px;
 
     &::before {
       background-image: url("../img/icon_eat.svg");
     }
 
     &::after {
-      background-image: url("../img/3.png");
-      width: 112px;
-      height: 232px;
-      right: 11px;
+      left: 114px;
     }
   }
 
   &--timer {
-    max-width: 250px;
+    width: 250px;
 
     &::before {
       background-image: url("../img/timer-icon.svg");
     }
 
     &::after {
-      background-image: url("../img/4.png");
-      width: 121px;
-      height: 227px;
-      right: 0;
+      left: 114px;
     }
   }
 }
@@ -112,6 +102,6 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: #444;
+  color: #444444;
   margin: 0;
 }
