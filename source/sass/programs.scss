@@ -1,0 +1,79 @@
+.programs {
+  margin-bottom: 71px;
+}
+
+.programs__list {
+  @include clear-list;
+  display: flex;
+  gap: 80px;
+}
+
+.programs__item {
+  padding: 41px 61px 55px 52px;
+  width: 457px;
+  background-color: #f2f2f2;
+}
+
+.programs__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 39px;
+
+  &--skinny::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 106px;
+    background-image: url("../img/cat-skinny.svg");
+    background-repeat: no-repeat;
+    margin-right: 62px;
+  }
+
+  &--muscle::before {
+    content: "";
+    display: block;
+    width: 134px;
+    height: 106px;
+    background-image: url("../img/cat-muscle.svg");
+    background-repeat: no-repeat;
+    margin-right: 47px;
+  }
+}
+
+.programs__text {
+  font-family: $font-lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 23px;
+}
+
+.programs__link {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 10px;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+  }
+}

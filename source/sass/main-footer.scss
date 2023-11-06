@@ -1,0 +1,36 @@
+.main-footer {
+  background-color: #f2f2f2;
+  padding: 66px 0;
+}
+
+.main-footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-footer__academy-link {
+  font-family: $font-lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #444444;
+  text-decoration: none;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 23px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    -webkit-mask-image: url("../img/academy-logo.svg");
+    -webkit-mask-repeat: no-repeat;
+    mask-image: url("../img/academy-logo.svg");
+    mask-repeat: no-repeat;
+    background-color: #666666;
+  }
+}
