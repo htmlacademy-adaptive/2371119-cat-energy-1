@@ -12,10 +12,13 @@
   <body class="page__body">
     <header class="page__header main-header">
       <div class="main-header__container container">
-        <a href="index.html" class="main-header__logo">
-          <img class="main-header__logo-img" src="img/logo-desktop.svg" width="202" height="59" alt="Cat Energy Logo.">
+        <a class="main-header__logo">
+          <img src="img/logo-mobile.svg" width="33" height="38" alt="Cat Energy Logo.">
         </a>
-        <nav class="navbar">
+        <nav class="navbar navbar--closed">
+          <button class="navbar__button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="navbar__list">
             <li class="navbar__item">
               <a href="index.html" class="navbar__link">
@@ -255,17 +258,14 @@
       <section class="map">
         <div class="map__container container">
           <div class="map__info">
-            <h3 class="map__title">
-              Приглашаем<br>
-              к сотрудничеству<br>
-              дилеров!
-            </h3>
-            <div class="map__address">
-              <p class="map__street">ул. Большая<br> Конюшенная, д. 19/8</p>
-              <p class="map__city">Санкт-Петербург</p>
+            <h5 class="map__title">Приглашаем к сотрудничеству дилеров!</h5>
+            <div class="map__text">
+              <span class="map__address">ул. Большая Конюшенная, д. 19/8</span>
+              <span class="map__city">Санкт-Петербург</span>
             </div>
           </div>
         </div>
+        <img class="map__image" src="img/map-mobile.png" width="320" height="362" alt="Карта с адресом магазина.">
       </section>
     </main>
     <footer class="page__footer main-footer">
