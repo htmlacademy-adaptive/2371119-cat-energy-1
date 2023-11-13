@@ -18,12 +18,12 @@
     display: block;
     width: 100%;
     height: 302px;
-    background-image: url("../img/index-background-mobile.png");
-    background-position: right;
+    background-color: #525156;
+    background-image: url("../img/index-background-mobile.jpg"), linear-gradient(to right, #525156, #444438);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: auto 100%;
     position: absolute;
-    background-color: #525156;
     top: 65px;
     right: 0;
     z-index: -2;
@@ -37,6 +37,8 @@
       width: 50%;
       height: 694px;
       background-image: url("../img/cat-background.jpg");
+      background-position: right;
+      background-color: #525156;
       right: 0;
       top: 0;
     }

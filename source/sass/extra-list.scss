@@ -6,10 +6,25 @@
 
 .extra-list__item {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 0 14px;
+  flex-direction: column;
+  padding: 12px 0 19px 0;
   border-top: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 37px 28px 37px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-left: none;
+    border-right: none;
+    padding: 15px 0 16px;
+  }
 
   &:last-child {
     border-bottom: 1px solid #cdcdcd;
@@ -17,35 +32,63 @@
 }
 
 .extra-list__name {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 16px;
   color: #222222;
   text-transform: uppercase;
   margin: 0;
-  width: 200px;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 200px;
+    margin: 0;
+  }
+}
+
+.extra-list__values {
+  font-family: $font-lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #444444;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    min-width: 223px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 285px;
+  }
 }
 
 .extra-list__weight {
-  font-family: $font-lato;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #444444;
   margin: 0;
-  width: 150px;
 }
 
 .extra-list__price {
-  font-family: $font-lato;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #444444;
   margin: 0;
-  width: 50px;
 }
 
 .extra-list__button {
-  width: 244px;
+  width: 280px;
+  margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+    width: 632px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 244px;
+  }
 }

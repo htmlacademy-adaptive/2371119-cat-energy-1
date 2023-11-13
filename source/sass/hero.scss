@@ -42,7 +42,7 @@
       z-index: -1;
       width: 708px;
       height: 609px;
-      background-image: url("../img/index-can-tablet.png");
+      background-image: url("../img/index-can-tablet.jpg");
       top: 201px;
       margin: 0;
     }
@@ -84,29 +84,29 @@
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 302px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: #000000;
-    margin-bottom: 50px;
     text-align: initial;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 52px;
   }
 }
 
 .hero__button {
   width: 280px;
+  margin-top: 308px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
     width: 244px;
     padding: 14px 0;
+    margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 52px;
   }
 }
