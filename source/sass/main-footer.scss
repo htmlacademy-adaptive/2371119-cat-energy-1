@@ -1,13 +1,52 @@
 .main-footer {
   background-color: #f2f2f2;
-  padding: 66px 0;
+  padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 66px 0;
+  }
 }
 
 .main-footer__container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.main-footer__logo {
+  padding-bottom: 19px;
+  border-bottom: 1px solid #d9d9d9;
+  width: 280px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+    width: initial;
+    text-align: left;
+  }
+}
+
+.main-footer__social {
+  padding-bottom: 19px;
+  border-bottom: 1px solid #d9d9d9;
+  width: 280px;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    width: initial;
+    padding: 0;
+    border: none;
+    justify-content: initial;
+  }
 }
 
 .main-footer__academy-link {
@@ -17,10 +56,18 @@
   line-height: 20px;
   color: #444444;
   text-decoration: none;
-  padding: 8px 0;
+  padding: 7px 0;
   display: flex;
   align-items: center;
-  gap: 23px;
+  justify-content: space-between;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 0;
+    gap: 23px;
+    justify-content: initial;
+    width: initial;
+  }
 
   &::after {
     content: "";

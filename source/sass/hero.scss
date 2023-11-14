@@ -1,41 +1,112 @@
 .hero {
-  margin-bottom: 266px;
+  margin-bottom: 20px;
+  padding-top: 27px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 526px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-bottom: 266px;
+  }
+}
+
+.hero__container {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 
   &::after {
     content: "";
     display: block;
-    width: 50%;
-    height: 694px;
-    background-color: rgba(104, 183, 56, 0.85);
+    width: 280px;
+    height: 270px;
+    background-image: url("../img/index-can-mobile.png");
+    background-repeat: no-repeat;
     position: absolute;
-    top: 0;
+    top: 140px;
+    left: 0;
     right: 0;
-    z-index: -1;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      z-index: -1;
+      width: 708px;
+      height: 609px;
+      background-image: url("../img/index-can-tablet.jpg");
+      top: 201px;
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 552px;
+      height: 499px;
+      background-image: url("../img/index-can.png");
+      margin: 0;
+      top: -81px;
+      left: 367px;
+      z-index: initial;
+    }
   }
 }
 
 .hero__title {
-  font-size: 60px;
+  font-size: 36px;
   font-weight: 400;
-  line-height: 60px;
-  color: #000000;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    margin-bottom: 40px;
+    text-align: initial;
+  }
 }
 
 .hero__text {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 14px;
+  color: #ffffff;
   text-transform: uppercase;
-  color: #000000;
-  margin-top: 0;
-  margin-bottom: 52px;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-align: initial;
+  }
 }
 
 .hero__button {
-  font-size: 20px;
-  line-height: 26px;
-  width: 244px;
-  padding: 14px 0;
+  width: 280px;
+  margin-top: 308px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 244px;
+    padding: 14px 0;
+    margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 52px;
+  }
 }
