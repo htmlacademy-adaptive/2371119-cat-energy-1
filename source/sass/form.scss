@@ -164,11 +164,9 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    h2 {
       span {
         width: 187px;
       }
-    }
   }
 }
 
@@ -202,7 +200,7 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 52px;
 
-    .choice {
+    .form__label {
       width: 220px;
     }
   }
