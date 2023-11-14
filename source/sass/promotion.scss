@@ -43,7 +43,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url("../img/promotion-mobile.png");
+    background-image: url("../img/promotion-mobile.jpg");
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
@@ -52,11 +52,11 @@
     z-index: -1;
 
     @media (min-width: $tablet-width) {
-      background-image: url("../img/promotion-tablet.png");
+      background-image: url("../img/promotion-tablet.jpg");
     }
 
     @media (min-width: $desktop-width) {
-      background-image: url("../img/promotion-desktop.png");
+      background-image: url("../img/promotion-desktop.jpg");
     }
   }
 }
