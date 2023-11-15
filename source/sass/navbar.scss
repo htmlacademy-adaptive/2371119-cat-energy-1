@@ -1,31 +1,93 @@
-.navbar--closed {
-  .navbar__button {
-    width: 24px;
-    height: 18px;
-    border: none;
-    background-color: #ffffff;
-    background-image: url("../img/navigation-button.svg");
-    background-repeat: no-repeat;
-    padding: 0;
+.navbar {
+  &--closed {
+    .navbar__button {
+      width: 24px;
+      height: 24px;
+      background-image: url("../img/navigation-button.svg");
 
-    @media (min-width: $tablet-width) {
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+
+    .navbar__list {
+      position: initial;
       display: none;
+
+      @media (min-width: $tablet-width) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 33px;
+      }
     }
   }
 
-  .navbar__list {
-    display: none;
+  @media (max-width: $mobile-width-only) {
+    &--nojs {
+      width: 100%;
 
-    @media (min-width: $tablet-width) {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 33px;
+      .navbar__button {
+        display: none;
+      }
+
+      .navbar__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
 }
 
 .navbar__list {
   @include clear-list;
+
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #ffffff;
+    z-index: 3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 436px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
+  }
+}
+
+.navbar__item {
+  @media (max-width: $mobile-width-only) {
+    padding: 21px 0 23px;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-color: #e6e6e6;
+      width: 100vw;
+      height: 1px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &:last-child::after {
+      content: "";
+      background-color: #e6e6e6;
+      width: 100vw;
+      height: 1px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+    }
+  }
 }
 
 .navbar__link {
@@ -57,4 +119,15 @@
       text-decoration-color: #ffffff;
     }
   }
+}
+
+.navbar__button {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: #ffffff;
+  background-image: url("../img/navigation-button-off.svg");
+  background-repeat: no-repeat;
+  padding: 0;
 }

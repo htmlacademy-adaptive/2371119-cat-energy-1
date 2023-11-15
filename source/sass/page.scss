@@ -67,6 +67,13 @@
       right: 0;
     }
   }
+
+  @media (max-width: $mobile-width-only) {
+    &--nojs::after,
+    &--nojs::before {
+      top: 268px;
+    }
+  }
 }
 
 .page__main {

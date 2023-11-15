@@ -8,18 +8,18 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page__body">
+<body class="page__body page__body--nojs">
   <div class="page__wrapper">
-    <header class="page__header main-header">
+    <header class="page__header main-header main-header--nojs">
       <div class="main-header__container container">
-        <a class="main-header__logo">
+        <a class="main-header__logo main-header__logo--nojs">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="50">
             <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип с котом.">
           </picture>
         </a>
-        <nav class="navbar navbar--closed">
+        <nav class="navbar navbar--closed navbar--nojs">
           <button class="navbar__button" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -143,7 +143,7 @@
       <section class="map">
         <div class="map__container container">
           <div class="map__info">
-            <h3 class="map__title">Приглашаем к сотрудничеству дилеров!</h5>
+            <h3 class="map__title">Приглашаем к сотрудничеству дилеров!</h3>
             <div class="map__text">
               <span class="map__address">ул. Большая Конюшенная, д. 19/8</span>
               <span class="map__city">Санкт-Петербург</span>
@@ -185,6 +185,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
