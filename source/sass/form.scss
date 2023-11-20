@@ -134,6 +134,12 @@
 .form__contacts {
   margin-bottom: 24px;
 
+  @media (max-width: $mobile-width-only) {
+    .title-line__name {
+      width: 187px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
   }
@@ -160,12 +166,6 @@
 
     @media (min-width: $desktop-width) {
       margin-bottom: 76px;
-    }
-  }
-
-  @media (max-width: $mobile-width-only) {
-    span {
-      width: 187px;
     }
   }
 }

@@ -17,28 +17,30 @@
   input[type="email"],
   input[type="tel"] {
     padding-right: 40px;
+
+    &:focus + svg {
+      filter: invert(65%) sepia(16%) saturate(1890%) hue-rotate(54deg) brightness(97%) contrast(73%);
+    }
+
+    &:invalid + svg {
+      filter: invert(65%) sepia(77%) saturate(1127%) hue-rotate(309deg) brightness(101%) contrast(105%);
+    }
   }
 
-  &--email::after,
-  &--tel::after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    right: 12px;
-    background-color: #000000;
-    mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
-  }
+  &--email,
+  &--tel {
+    .field__icon {
+      position: absolute;
+      right: 12px;
 
-  &--email::after {
-    mask-image: url("../img/email-icon.svg");
-    -webkit-mask-image: url("../img/email-icon.svg");
-  }
+      @media (min-width: $tablet-width) {
+        right: 14px;
+      }
 
-  &--tel::after {
-    mask-image: url("../img/phone-icon.svg");
-    -webkit-mask-image: url("../img/phone-icon.svg");
+      @media (min-width: $desktop-width) {
+        right: 16px;
+      }
+    }
   }
 
   &--textarea {
@@ -84,14 +86,15 @@
   line-height: 18px;
   color: #444444;
   text-transform: uppercase;
-  border: 1px solid #e7e7e7;
-  padding: 13px 0 12px 14px;
+  outline: 1px solid #e7e7e7;
+  padding: 15px 0 14px 15px;
   width: 100%;
+  border: none;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding: 10px 0 10px 19px;
+    padding: 11px 0 11px 20px;
   }
 
   &::placeholder {
@@ -104,7 +107,18 @@
     @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 30px;
-      padding: 10px 0 10px 19px;
     }
+  }
+
+  &:hover {
+    outline-color: #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &:invalid {
+    outline: 2px solid #ff8282;
   }
 }

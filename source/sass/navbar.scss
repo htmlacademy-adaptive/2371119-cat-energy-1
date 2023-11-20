@@ -88,6 +88,14 @@
       bottom: 0;
     }
   }
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .navbar__link {
