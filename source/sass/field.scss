@@ -21,10 +21,6 @@
     &:focus + svg {
       filter: invert(65%) sepia(16%) saturate(1890%) hue-rotate(54deg) brightness(97%) contrast(73%);
     }
-
-    &:invalid + svg {
-      filter: invert(65%) sepia(77%) saturate(1127%) hue-rotate(309deg) brightness(101%) contrast(105%);
-    }
   }
 
   &--email,
@@ -48,17 +44,20 @@
     position: initial;
 
     textarea {
-      padding: 13px 13px 0 14px;
+      width: 250px;
+      padding: 13px 15px 0 15px;
       height: 150px;
       resize: none;
 
       @media (min-width: $tablet-width) {
-        padding: 10px 19px 0 19px;
+        width: 588px;
+        padding: 10px 20px 0 20px;
         height: 175px;
       }
 
       @media (min-width: $desktop-width) {
-        padding-top: 8px;
+        width: 1180px;
+        padding-top: 9px;
       }
     }
   }
@@ -118,7 +117,11 @@
     outline: 2px solid #444444;
   }
 
-  &:invalid {
+  &--error {
     outline: 2px solid #ff8282;
+
+    & + svg {
+      filter: invert(65%) sepia(77%) saturate(1127%) hue-rotate(309deg) brightness(101%) contrast(105%);
+    }
   }
 }
