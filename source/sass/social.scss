@@ -29,4 +29,13 @@
     -webkit-mask-image: url("../img/telegram.svg");
     mask-image: url("../img/telegram.svg");
   }
+
+  &:hover {
+    background-color: #68b738;
+  }
+
+  &:active {
+    background-color: #68b738;
+    opacity: 30%;
+  }
 }
