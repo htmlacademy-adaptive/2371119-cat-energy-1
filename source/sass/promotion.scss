@@ -51,12 +51,24 @@
     left: 0;
     z-index: -1;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("..img/promotion-mobile@2x.jpg");
+    }
+
     @media (min-width: $tablet-width) {
       background-image: url("../img/promotion-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promotion-tablet@2x.jpg");
+      }
     }
 
     @media (min-width: $desktop-width) {
       background-image: url("../img/promotion-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promotion-desktop@2x.jpg");
+      }
     }
   }
 }
