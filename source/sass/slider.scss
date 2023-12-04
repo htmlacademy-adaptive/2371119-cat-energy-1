@@ -1,6 +1,5 @@
 .slider {
   position: relative;
-  overflow: hidden;
 
   img {
     width: 100%;
@@ -20,11 +19,11 @@
   height: 100%;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 150px, rgba(234, 234, 234, 1) 150px);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 159px, rgba(234, 234, 234, 1) 159px);
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 130px, rgba(242, 242, 242, 1) 130px);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 135px, rgba(242, 242, 242, 1) 135px);
   }
 }
 

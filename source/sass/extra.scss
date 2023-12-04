@@ -2,6 +2,10 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 87px;
   }
 }
@@ -33,6 +37,12 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 80px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1339px) {
+    span {
+      margin-left: 0;
+    }
   }
 }
 

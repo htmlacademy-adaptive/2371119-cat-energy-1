@@ -49,11 +49,13 @@
     <main class="page__main">
       <section class="hero">
         <div class="hero__container container">
-          <h1 class="hero__title">Функциональное<br> питание для котов</h1>
-          <p class="hero__text">Занялся собой? Займись котом!</p>
-          <a href="#" class="hero__button button">
-            Подобрать программу
-          </a>
+          <div class="hero__wrapper">
+            <h1 class="hero__title">Функциональное<br> питание для котов</h1>
+            <p class="hero__text">Занялся собой? Займись котом!</p>
+            <a href="#" class="hero__button button">
+              Подобрать программу
+            </a>
+          </div>
         </div>
       </section>
       <section class="programs">
@@ -126,15 +128,15 @@
               <ul class="results__list">
                 <li class="results__item">
                   <span class="results__value">5 кг</span>
-                  <span class="results__name">снижение веса</span>
+                  <span class="results__name results__name--weight">снижение веса</span>
                 </li>
                 <li class="results__item">
                   <span class="results__value">60 дней</span>
-                  <span class="results__name">затрачено времени</span>
+                  <span class="results__name results__name--time">затрачено времени</span>
                 </li>
               </ul>
               <div class="results__price">
-                <p>Затраны на питание:</p>
+                <p>Затраты на питание:</p>
                 <b>15 000 руб.</b>
               </div>
             </div>
@@ -165,7 +167,7 @@
       <section class="map map--index">
         <div class="map__container container">
           <div class="map__info">
-            <h5 class="map__title">Приглашаем к сотрудничеству дилеров!</h5>
+            <h5 class="map__title">Приглашаем<br> к сотрудничеству дилеров!</h5>
             <div class="map__text">
               <span class="map__address">ул. Большая Конюшенная, д. 19/8</span>
               <span class="map__city">Санкт-Петербург</span>
@@ -212,6 +214,7 @@
     </footer>
   </div>
   <script src="js/main.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>
