@@ -10,14 +10,10 @@
       }
     }
 
-    .navbar__list {
-      position: initial;
-      display: none;
-
-      @media (min-width: $tablet-width) {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 33px;
+    @media (max-width: $mobile-width-only) {
+      .navbar__list {
+        position: initial;
+        display: none;
       }
     }
   }
@@ -37,6 +33,10 @@
       }
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 16px 0 13px 0;
+  }
 }
 
 .navbar__list {
@@ -53,10 +53,15 @@
   }
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
     width: 436px;
   }
 
   @media (min-width: $desktop-width) {
+    gap: 0;
+    justify-content: space-between;
     width: 475px;
   }
 }
@@ -112,13 +117,14 @@
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 20px;
     line-height: 30px;
     color: #111111;
 
     &--active {
       text-decoration: underline;
       text-decoration-thickness: 2px;
-      text-underline-offset: 6px;
+      text-underline-offset: 12px;
       text-decoration-color: #68b738;
     }
 

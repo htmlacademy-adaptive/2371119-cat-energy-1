@@ -3,6 +3,10 @@
   align-items: center;
   gap: 15px;
 
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
+
   &--radio {
     .choice__checkbox {
       border-radius: 50%;
@@ -13,6 +17,11 @@
       width: 13px;
       height: 13px;
       border-radius: 50%;
+
+      @media (min-width: $tablet-width) {
+        width: 18px;
+        height: 18px;
+      }
     }
   }
 }

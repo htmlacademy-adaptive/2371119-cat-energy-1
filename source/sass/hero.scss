@@ -17,10 +17,6 @@
 .hero__container {
   position: relative;
 
-  @media (min-width: $tablet-width) {
-    padding-left: 90px;
-  }
-
   @media (min-width: $desktop-width) {
     padding: 0;
   }
@@ -53,9 +49,19 @@
       background-image: url("../img/index-can.png");
       margin: 0;
       top: -81px;
-      left: 367px;
+      left: 447px;
       z-index: initial;
     }
+  }
+}
+
+.hero__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
   }
 }
 
@@ -96,7 +102,7 @@
 
 .hero__button {
   width: 280px;
-  margin-top: 308px;
+  margin-top: 302px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

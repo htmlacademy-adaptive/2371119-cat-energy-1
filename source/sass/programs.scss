@@ -1,5 +1,13 @@
 .programs {
-  margin-bottom: 71px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
 }
 
 .programs__list {
@@ -33,7 +41,7 @@
       background-repeat: no-repeat;
       background-size: 200px 211px;
       position: absolute;
-      top: 81px;
+      top: 78px;
       right: 63px;
     }
 
@@ -95,7 +103,21 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    &--pro {
+      margin-left: -7px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 39px;
+
+    &--pro {
+      margin-left: -19px;
+    }
   }
 
   &--slim::before {
@@ -161,6 +183,10 @@
     padding: 0;
     border: none;
     margin-top: 0;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 23px;
   }
 }
@@ -177,7 +203,7 @@
   align-items: center;
   gap: 15px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     gap: 25px;

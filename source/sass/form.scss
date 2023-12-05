@@ -44,13 +44,16 @@
   font-weight: 400;
   line-height: 18px;
   color: #000000;
+  text-transform: uppercase;
   margin-top: 0;
+  width: 226px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
     color: #000000;
+    width: 323px;
   }
 }
 
@@ -71,7 +74,7 @@
 .form__field-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 11px;
   margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
@@ -95,7 +98,7 @@
   justify-content: center;
   gap: 13px;
   border: none;
-  padding: 21px 0 18px 0;
+  padding: 23px 0 18px 0;
   margin: 0;
   position: relative;
 
@@ -121,13 +124,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 24px 0 24px 27px;
+    padding: 22px 0 26px 26px;
     border: 1px solid #e7e7e7;
     flex-grow: 1;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    padding: 24px 0 24px 27px;
   }
 }
 
@@ -135,6 +139,10 @@
   margin-bottom: 24px;
 
   @media (max-width: $mobile-width-only) {
+    .title-line::after {
+      top: 33%;
+    }
+
     .title-line__name {
       width: 187px;
     }
@@ -142,6 +150,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
+
+    .form__field-wrapper {
+      margin: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -161,7 +173,7 @@
     margin-bottom: 35px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 75px;
+      margin-bottom: 76px;
     }
 
     @media (min-width: $desktop-width) {
@@ -171,14 +183,14 @@
 }
 
 .form__commentary {
-  margin-bottom: 23px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 61px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 70px;
+    margin-bottom: 65px;
   }
 
   .form__title {
@@ -195,13 +207,21 @@
 }
 
 .form__additional {
-  margin-bottom: 34px;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 52px;
 
     .form__label {
-      width: 220px;
+      @media (min-width: $tablet-width) {
+        width: 220px;
+        flex-grow: initial;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 245px;
+        flex-grow: initial;
+      }
     }
   }
 
@@ -214,6 +234,10 @@
     margin-bottom: 34px;
 
     @media (min-width: $tablet-width) {
+      margin-bottom: 56px;
+    }
+
+    @media (min-width: $desktop-width) {
       margin-bottom: 57px;
     }
   }
@@ -229,13 +253,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 32px;
-    column-gap: 123px;
+    column-gap: 124px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 0;
   }
 }
 
@@ -260,13 +285,17 @@
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 0;
     width: 284px;
     margin-bottom: 0;
-    margin-right: 60px;
+    margin-right: 57px;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
+    margin-right: 77px;
   }
 }
 

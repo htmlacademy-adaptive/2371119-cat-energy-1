@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body page__body--nojs">
@@ -45,7 +45,7 @@
     </header>
     <main class="page__main">
       <section class="form">
-        <div class="form__container container">
+        <div class="form__container container container--form">
           <h1 class="form__title">Подбор программы</h1>
           <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form action="https://echo.htmlacademy.ru/">
@@ -96,7 +96,7 @@
                 </label>
                 <label class="form__label field field--tel">
                   <span class="field__name">Телефон:*</span>
-                  <input class="field__input" type="tel" name="telephone" placeholder="8(960)900-60-90" required>
+                  <input class="field__input" type="tel" name="telephone" placeholder="8 (960) 900-60-90" required>
                   <svg class="field__icon" width="20" height="20">
                     <use xlink:href="img/sprite.svg#phone-icon"></use>
                   </svg>
@@ -117,22 +117,22 @@
                 <span>Дополнительно</span>
               </h2>
               <div class="form__checkbox-wrapper">
-                <label class="form__label choice">
+                <label class="form__label choice choice--sweetener">
                   <input class="choice__input" type="checkbox" name="sweetener" value="Cахарозаменитель" checked>
                   <span class="choice__checkbox"></span>
                   <span class="choice__name">Сахарозаменитель</span>
                 </label>
-                <label class="form__label choice">
+                <label class="form__label choice choice--water">
                   <input class="choice__input" type="checkbox" name="water" value="Питьевая вода">
                   <span class="choice__checkbox"></span>
                   <span class="choice__name">Питьевая вода</span>
                 </label>
-                <label class="form__label choice">
+                <label class="form__label choice choice--milk">
                   <input class="choice__input" type="checkbox" name="milk" value="Молоко">
                   <span class="choice__checkbox"></span>
                   <span class="choice__name">Молоко</span>
                 </label>
-                <label class="form__label choice">
+                <label class="form__label choice choice--vitamins">
                   <input class="choice__input" type="checkbox" name="vitamins" value="Витамины">
                   <span class="choice__checkbox"></span>
                   <span class="choice__name">Витамины</span>
@@ -147,9 +147,9 @@
         </div>
       </section>
       <section class="map">
-        <div class="map__container container">
-          <div class="map__info">
-            <h3 class="map__title">Приглашаем к сотрудничеству дилеров!</h3>
+        <div class="map__container container container--form">
+          <div class="map__info map__info--form">
+            <h3 class="map__title">Приглашаем<br> к сотрудничеству дилеров!</h3>
             <div class="map__text">
               <span class="map__address">ул. Большая Конюшенная, д. 19/8</span>
               <span class="map__city">Санкт-Петербург</span>
@@ -157,10 +157,13 @@
           </div>
         </div>
         <picture>
+          <source type="image/webp" media="(min-width:1440px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width:768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+
           <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
-          <img class="map__image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="362"
-            alt="Карта с адресом магазина.">
+          <img class="map__image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта с адресом магазина.">
         </picture>
       </section>
     </main>

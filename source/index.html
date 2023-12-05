@@ -7,8 +7,8 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="images/favicons/apple.png">
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body page__body--index page__body--nojs">
@@ -49,11 +49,13 @@
     <main class="page__main">
       <section class="hero">
         <div class="hero__container container">
-          <h1 class="hero__title">Функциональное<br> питание для котов</h1>
-          <p class="hero__text">Занялся собой? Займись котом!</p>
-          <a href="#" class="hero__button button">
-            Подобрать программу
-          </a>
+          <div class="hero__wrapper">
+            <h1 class="hero__title">Функциональное<br> питание для котов</h1>
+            <p class="hero__text">Занялся собой? Займись котом!</p>
+            <a href="#" class="hero__button button">
+              Подобрать программу
+            </a>
+          </div>
         </div>
       </section>
       <section class="programs">
@@ -126,27 +128,33 @@
               <ul class="results__list">
                 <li class="results__item">
                   <span class="results__value">5 кг</span>
-                  <span class="results__name">снижение веса</span>
+                  <span class="results__name results__name--weight">снижение веса</span>
                 </li>
                 <li class="results__item">
                   <span class="results__value">60 дней</span>
-                  <span class="results__name">затрачено времени</span>
+                  <span class="results__name results__name--time">затрачено времени</span>
                 </li>
               </ul>
               <div class="results__price">
-                <p>Затраны на питание:</p>
+                <p>Затраты на питание:</p>
                 <b>15 000 руб.</b>
               </div>
             </div>
             <div class="results__slider slider">
               <div class="slider__before">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/fat-cat-tablet.webp 1x, img/fat-cat-tablet@2x.webp 2x" width="560" height="212">
+                  <source type="image/webp" srcset="img/fat-cat-mobile.webp 1x, img/fat-cat-mobile@2x.webp 2x" width="280" height="256">
+
                   <source media="(min-width: 768px)" srcset="img/fat-cat-tablet.png 1x, img/fat-cat-tablet@2x.png 2x" width="560" height="212">
                   <img src="img/fat-cat-mobile.png" srcset="img/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="До.">
                 </picture>
               </div>
               <div class="slider__after">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/thin-cat-tablet.webp 1x, img/thin-cat-tablet@2x.webp 2x" width="560" height="512">
+                  <source type="image/webp" srcset="img/thin-cat-mobile.webp 1x, img/thin-cat-mobile@2x.webp 2x" width="280" height="256">
+
                   <source media="(min-width: 768px)" srcset="img/thin-cat-tablet.png 1x, img/thin-cat-tablet@2x.png 2x" width="560" height="512">
                   <img src="img/thin-cat-mobile.png" srcset="img/thin-cat-mobile@2x.png 2x" width="280" height="256" alt="После.">
                 </picture>
@@ -159,7 +167,7 @@
       <section class="map map--index">
         <div class="map__container container">
           <div class="map__info">
-            <h5 class="map__title">Приглашаем к сотрудничеству дилеров!</h5>
+            <h5 class="map__title">Приглашаем<br> к сотрудничеству дилеров!</h5>
             <div class="map__text">
               <span class="map__address">ул. Большая Конюшенная, д. 19/8</span>
               <span class="map__city">Санкт-Петербург</span>
@@ -167,6 +175,10 @@
           </div>
         </div>
         <picture>
+          <source type="image/webp" media="(min-width:1440px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width:768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+
           <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
           <img class="map__image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта с адресом магазина.">
@@ -202,6 +214,7 @@
     </footer>
   </div>
   <script src="js/main.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>

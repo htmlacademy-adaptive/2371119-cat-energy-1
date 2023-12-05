@@ -1,7 +1,7 @@
 .field {
   display: flex;
   align-items: center;
-  gap: 13px;
+  gap: 14px;
   position: relative;
 
   input[type="number"] {
@@ -11,6 +11,18 @@
     &::-webkit-outer-spin-button {
       -webkit-appearance: none;
       appearance: none;
+    }
+  }
+
+  input[type="email"] {
+    @media (min-width: $desktop-width) {
+      width: 434px;
+    }
+  }
+
+  input[type="tel"] {
+    @media (min-width: $desktop-width) {
+      width: 412px;
     }
   }
 
@@ -27,8 +39,27 @@
   &--tel {
     .field__icon {
       position: absolute;
-      right: 12px;
       fill: none;
+    }
+  }
+
+  &--email {
+    .field__icon {
+      right: 12px;
+
+      @media (min-width: $tablet-width) {
+        right: 14px;
+      }
+
+      @media (min-width: $desktop-width) {
+        right: 16px;
+      }
+    }
+  }
+
+  &--tel {
+    .field__icon {
+      right: 13px;
 
       @media (min-width: $tablet-width) {
         right: 14px;
@@ -47,18 +78,19 @@
     textarea {
       width: 250px;
       padding: 13px 15px 0 15px;
-      height: 150px;
+      height: 137px;
       resize: none;
 
       @media (min-width: $tablet-width) {
         width: 588px;
         padding: 10px 20px 0 20px;
-        height: 175px;
+        height: 165px;
       }
 
       @media (min-width: $desktop-width) {
         width: 1180px;
         padding-top: 9px;
+        height: 166px;
       }
     }
   }
