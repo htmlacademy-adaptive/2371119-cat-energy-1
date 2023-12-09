@@ -66,7 +66,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 381px;
+    margin-right: auto;
   }
 }
 
@@ -94,8 +94,6 @@
     display: block;
     width: 27px;
     height: 34px;
-    -webkit-mask-image: url("../img/academy-logo.svg");
-    -webkit-mask-repeat: no-repeat;
     mask-image: url("../img/academy-logo.svg");
     mask-repeat: no-repeat;
     background-color: #666666;

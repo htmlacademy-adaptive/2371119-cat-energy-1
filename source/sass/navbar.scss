@@ -114,12 +114,6 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 30px;
-    color: #111111;
 
     &--active {
       text-decoration: underline;
@@ -127,6 +121,12 @@
       text-underline-offset: 12px;
       text-decoration-color: #68b738;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: #111111;
 
     &--index {
       color: #ffffff;
