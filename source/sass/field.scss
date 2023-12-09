@@ -4,30 +4,27 @@
   gap: 14px;
   position: relative;
 
-  input[type="number"] {
-    -moz-appearance: textfield;
-
+  [type="number"] {
     &::-webkit-inner-spin-button,
     &::-webkit-outer-spin-button {
-      -webkit-appearance: none;
       appearance: none;
     }
   }
 
-  input[type="email"] {
+  [type="email"] {
     @media (min-width: $desktop-width) {
       width: 434px;
     }
   }
 
-  input[type="tel"] {
+  [type="tel"] {
     @media (min-width: $desktop-width) {
       width: 412px;
     }
   }
 
-  input[type="email"],
-  input[type="tel"] {
+  [type="email"],
+  [type="tel"] {
     padding-right: 40px;
 
     &:focus + svg {

@@ -220,9 +220,6 @@
   width: 30px;
   height: 30px;
   background-color: #d3d3d3;
-  -webkit-mask-image: url("../img/plus.svg");
-  -webkit-mask-size: 30px 30px;
-  -webkit-mask-repeat: no-repeat;
   mask-image: url("../img/plus.svg");
   mask-size: 30px 30px;
   mask-repeat: no-repeat;
@@ -231,7 +228,6 @@
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
-    -webkit-mask-size: 60px;
     mask-size: 60px;
     margin-bottom: 50px;
   }

@@ -209,6 +209,10 @@
     gap: 25px;
   }
 
+  @media (min-width: $desktop-width) {
+    gap: 29px;
+  }
+
   &::after {
     content: "";
     display: block;

@@ -28,8 +28,6 @@
 
 .choice__input {
   position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 
   &:disabled + .choice__checkbox,
@@ -55,6 +53,11 @@
   &:hover {
     outline-color: #bababa;
   }
+
+
+  &:focus {
+    outline: 1px solid #444444;
+  }
 }
 
 .choice__input:checked + .choice__checkbox::after {
@@ -65,8 +68,6 @@
   background-color: #68b738;
   mask-image: url("../img/check-mark.svg");
   mask-repeat: no-repeat;
-  -webkit-mask-image: url("../img/check-mark.svg");
-  -webkit-mask-repeat: no-repeat;
 }
 
 .choice__name {
