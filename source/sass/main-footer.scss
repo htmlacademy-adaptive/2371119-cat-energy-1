@@ -99,7 +99,8 @@
     background-color: #666666;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     &::after {
       background-color: #68b738;
     }

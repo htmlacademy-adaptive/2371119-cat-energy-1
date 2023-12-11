@@ -25,7 +25,8 @@
     mask-image: url("../img/telegram.svg");
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #68b738;
   }
 

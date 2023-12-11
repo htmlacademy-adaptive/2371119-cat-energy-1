@@ -11,7 +11,7 @@
   }
 
   &--form {
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) and (max-width: 1339px) {
       width: 628px;
     }
   }
