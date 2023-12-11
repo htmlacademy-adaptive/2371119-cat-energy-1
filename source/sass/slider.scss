@@ -18,6 +18,10 @@
   width: 50%;
   height: 100%;
 
+  @media (max-width: $mobile-width-only) {
+    background-color: #eaeaea;
+  }
+
   @media (min-width: $tablet-width) {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 152px, rgba(234, 234, 234, 1) 152px);
   }

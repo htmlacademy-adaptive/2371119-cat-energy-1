@@ -1,9 +1,9 @@
-const slider = document.querySelector(".slider");
-const sliderBefore = slider.querySelector(".slider__before");
-const beforeImage = sliderBefore.querySelector("img");
-const sliderThumb = slider.querySelector(".slider__thumb");
+const slider = document.querySelector('.slider');
+const sliderBefore = slider.querySelector('.slider__before');
+const beforeImage = sliderBefore.querySelector('img');
+const sliderThumb = slider.querySelector('.slider__thumb');
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   let width = slider.offsetWidth;
   beforeImage.style.width = `${width}px`;
 });
